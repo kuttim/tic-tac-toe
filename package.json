@@ -1,7 +1,9 @@
 {
-  "name": "tictac",
+  "name": "tic-tac-toe",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Mikk Küttim <kuttim.mikk@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
