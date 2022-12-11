@@ -1,26 +1,53 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.h1 {
+  display: flex;
+  align-items: center;
 }
 
-* {
-  box-sizing: border-box;
+.tic-tac-toe .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.tic-tac-toe .grid > div {
+  display: flex;
+}
+
+.restart {
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.tic-tac-toe .grid > button {
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.tic-tac-toe .grid > div > button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.tic-tac-toe .winner {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
 }
